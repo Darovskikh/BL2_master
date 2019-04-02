@@ -37,7 +37,7 @@ namespace ConsoleApp7
 
             //3. BOOL CONVERSION
             bool hasFree2Pages = false;//to string, to char, to int
-            string hasFree2PagesString = Convert .ToString( hasFree2Pages); // "false"
+            string hasFree2PagesString = Convert .ToString( hasFree2Pages); // "False"
             //char hasFree2PagesChar = Convert.ToChar(hasFree2Pages);  нет такого символа 'False'
             int hasFree2PagesInt = Convert.ToInt32(hasFree2Pages); // 0
             
