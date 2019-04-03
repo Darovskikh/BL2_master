@@ -19,7 +19,9 @@ namespace ConsoleApp7
             char place = '3';//to int
             int placeInt = place;  // 51
             char hasFingerPrints = '0';//to boolean
-           // bool hasFingerPrintsBool = Convert.ToBoolean(  hasFingerPrints); красиво преобразовать не получается
+            string hasFingerPrintsString = Convert.ToString( hasFingerPrints); // "0" 
+            int hasFingerPrintsInt = Int32.Parse(hasFingerPrintsString); // 0
+            bool hasFingerPrintsBool = Convert.ToBoolean(  hasFingerPrintsInt);  // false
 
             //2. STRING CONVERSION           
             string hasPhotoString = "True";//to bolean
@@ -37,10 +39,10 @@ namespace ConsoleApp7
 
             //3. BOOL CONVERSION
             bool hasFree2Pages = false;//to string, to char, to int
-            string hasFree2PagesString = Convert .ToString( hasFree2Pages); // "False"
-            //char hasFree2PagesChar = Convert.ToChar(hasFree2Pages);  нет такого символа 'False'
+            string hasFree2PagesString = Convert .ToString( hasFree2Pages); // "False"                 
             int hasFree2PagesInt = Convert.ToInt32(hasFree2Pages); // 0
-            
+            char hasFree2PagesChar = Convert.ToChar(hasFree2PagesInt); // '\0'
+
             //4. DECIMAL CONVERSION
             double visaPrice = 60;//to int, to string
             int visaPriceInt32 = (int)visaPrice;  // 60
